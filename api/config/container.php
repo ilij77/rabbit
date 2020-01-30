@@ -1,14 +1,76 @@
 <?php
+use DI\ContainerBuilder;
+use Slim\App;
 
-declare(strict_types=1);
+require_once __DIR__ . '/../vendor/autoload.php';
 
-use Zend\ConfigAggregator\ConfigAggregator;
-use Zend\ConfigAggregator\PhpFileProvider;
+$containerBuilder = new ContainerBuilder();
 
-$aggregator = new ConfigAggregator([
-    new PhpFileProvider(__DIR__ . '/common/*.php'),
-]);
+// Set up settings
+$containerBuilder->addDefinitions(__DIR__ . '/container.php');
 
-$config = $aggregator->getMergedConfig();
+// Build PHP-DI Container instance
+$container = $containerBuilder->build();
 
-return new \Slim\Container($config);
+// Create App instance
+$app = $container->get(App::class);
+
+// Register routes
+//(require __DIR__ . '/routes.php')($app);
+
+// Register middleware
+(require __DIR__ . '/middleware.php')($app);
+
+return $app;
+
+
+
+
+
+
+//
+//declare(strict_types=1);
+//
+////use DI\Bridge\Slim\Bridge;
+//use DI\Container;
+//
+//use DI\ContainerBuilder;
+//use Zend\ConfigAggregator\ConfigAggregator;
+//use Zend\ConfigAggregator\PhpFileProvider;
+//use Slim\App;
+//use Slim\Factory\AppFactory;
+//
+//
+//chdir(dirname(__DIR__));
+//require 'vendor/autoload.php';
+//
+//$aggregator = new ConfigAggregator([
+//    new PhpFileProvider(__DIR__ . '/common/*.php'),
+//	new PhpFileProvider(__DIR__ . '/' . (getenv('API_ENV') ?: 'prod') . '/*.php'),
+//]);
+//
+//
+//
+//
+////$config = $aggregator->getMergedConfig();
+//$config = [];
+//
+//$container = new Container();
+//AppFactory::setContainer($container);
+//$app = AppFactory::create();
+//$container->set('myService', function () {
+//	$settings = [1=>4,2=>8,3=>56];
+//	return new MyService($settings);
+//});
+//$myService = $app->get('myService');
+//
+//return $myService;
+
+
+//$containerBuilder = new ContainerBuilder();
+//$containerBuilder->addDefinitions($config);
+//$container = $containerBuilder->build();
+//$app = $container->get(App::class);
+//return $app;
+
+

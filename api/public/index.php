@@ -36,10 +36,11 @@ $app->addRoutingMiddleware();
  * Note: This middleware should be added last. It will not handle any exceptions/errors
  * for middleware added after it.
  */
-$errorMiddleware = $app->addErrorMiddleware(true, true, true);
+//$errorMiddleware = $app->addErrorMiddleware(true, true, true);
 
 // Define app routes
-(require 'config/routes.php')($app);
+//$app->get('/', new HomeAction() );
+//require 'config/routes.php';
 
 // Run app
 	$app->run();

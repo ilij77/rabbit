@@ -18,11 +18,17 @@
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/persistence" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/reflection" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/fig/http-message-util" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/jeremeamia/superclosure" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/myclabs/deep-copy" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/nikic/fast-route" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/paragonie/random_compat" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/phar-io/manifest" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/php-di/invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/php-di/php-di" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/php-di/phpdoc-reader" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/php-di/slim-bridge" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpdocumentor/reflection-common" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpdocumentor/reflection-docblock" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpdocumentor/type-resolver" />
@@ -57,10 +63,14 @@
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/dotenv" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-ctype" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-php56" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-util" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/service-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/zendframework/zend-config-aggregator" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/zendframework/zend-diactoros" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/zendframework/zend-stdlib" />
     </content>
     <orderEntry type="inheritedJdk" />

@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-use Api\Http\Action;
+
+use Api\Http\Action\HomeAction;
 use Slim\App;
 
- $app->get('/', Action\HomeAction::class);
+return $app->get('/', new HomeAction());
 
